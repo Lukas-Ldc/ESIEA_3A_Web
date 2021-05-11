@@ -1,1 +1,429 @@
-/**/
+/* General */
+
+html body * {
+    font-family: 'Lato', sans-serif;
+}
+
+html body {
+    margin: auto;
+    width: 90%;
+}
+
+/* Header */
+
+#call_pc, #social_pc, #menu_pc, #allay {
+    display: none;
+}
+
+#img_logo, #menu img {
+    width: auto;
+    height: 1.5em;
+}
+
+.social img, footer p img {
+    width: auto;
+    height: 1.2em;
+    margin: 0 0.1em;
+}
+
+header {
+    margin: 1em 0;
+    position: relative;
+}
+
+header nav {
+    display: inline;
+    margin: 0;
+    position: absolute;
+    right: 0.5em;
+}
+
+#call_mobile {
+    margin: auto;
+    text-align: center;
+    font-size: 0.9em;
+    margin: 0.5em 0;
+    font-weight: bold;
+}
+
+#social_mobile {
+    display: block;
+    text-align: center;
+}
+
+@media only screen and (min-width: 700px) {
+    #social_mobile, #call_mobile {
+        display: none;
+    }
+    #social_pc, #call_pc, #menu_pc {
+        display: inline;
+    }
+    header p {
+        margin: 0;
+    }
+    header a {
+        text-decoration: none;
+        color: black;
+    }
+    header nav {
+        position: initial;
+    }
+    header span {
+        display: flex;
+        justify-content: space-between;
+    }
+    #social_pc, .menu img {
+        margin-top: 0.21em;
+    }
+}
+
+/* Footer */
+
+footer img, footer .social {
+    margin: 1em;
+}
+
+@media only screen and (max-width: 900px) {
+    footer {
+        position: relative;
+    }
+    footer .social {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    footer p {
+        margin: 1em 1em;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* Main */
+
+@media only screen and (max-width: 700px) {
+    #main_img_mob {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    #main_img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    #main_img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    #main_img_mob {
+        display: none;
+    }
+}
+
+/* Section leaders */
+
+#leadeurs {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#leadeurs span, #leadeurs img {
+    margin: 2em 0;
+    max-width: 25em;
+}
+
+#leadeurs img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+#leadeurs span img {
+    width: auto;
+    height: 7em;
+    margin: 1em auto;
+}
+
+#leadeurs span {
+    margin-right: 2em;
+}
+
+#leadeurs #a {
+    color: green;
+    font-size: 1.4em;
+}
+#leadeurs #b {
+    font-weight: bold;
+    font-size: 2em;
+}
+#leadeurs #c {
+    text-align: justify;
+    font-size: 0.9em;
+    margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 900px) {
+    #leadeurs span, #leadeurs img {
+        margin: 6em 0;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    #allay {
+        display: inline;
+        max-height: 40em;
+    }
+    #allay_mob {
+        display: none;
+    }
+}
+
+/* Section projets */ 
+
+#projets {
+    position: relative;
+}
+
+#projets div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#projets #a {
+    font-weight: bold;
+    font-size: 1.5em;
+    display: inline;
+    margin: 0;
+}
+
+#projets #b {
+    color: green;
+    font-weight: bold;
+    font-size: 0.8em;
+    display: inline;
+    margin-right: 0.4em;
+}
+
+#projets #c, #projets #d {
+    font-weight: bold;
+    font-size: 0.8em;
+    display: inline;
+    margin-right: 0.4em;
+}
+
+#projets #e {
+    color: gray;
+    font-style: italic;
+    font-size: 0.8em;
+    display: inline;
+}
+
+#projets span {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#projets span article {
+    position: relative;
+}
+
+#projets span article p {
+    position: absolute;
+    bottom: 3em;
+    left: 1em;
+    color: white;
+    font-size: 2em;
+    max-width: 70%;
+}
+
+#projets span article a {
+    position: absolute;
+    bottom: 3em;
+    left: 1.5em;
+    color: white;
+    font-size: 1.4em;
+}
+
+#projets span img {
+    max-width: 90%;
+    height: auto;
+    margin: 1em 1em;
+}
+
+#projets span a img {
+    height: 2em;
+    width: 2em;
+}
+
+#projets nav {
+    margin-top: 0.5em;
+}
+
+@media only screen and (max-width: 700px) {
+    #projets div {
+        justify-content: start;
+    }
+    #projets #a {
+        margin-right: 5em;
+    }
+}
+
+/* Revues */
+
+#revues {
+    background-color: #e0e0e0;
+    margin: 3em 0;
+    padding: 2em 0;
+}
+
+#revues #cadre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#revues #a {
+    font-size: 1.5em;
+    display: block;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    margin-top: 0;
+}
+
+#revues #cadre article {
+    background-color: white;
+    max-width: 90%;
+    max-height: 90%;
+    margin: 1em;
+    position: relative;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+#revues #cadre img {
+    width: 4em;
+    height: auto;
+    border-radius: 50%;
+    top: -2em;
+    left: 1.9em;
+    position: absolute;
+}
+
+#revues .b {
+    margin: 1em;
+    margin-top: 3em;
+}
+
+#revues .c {
+    margin: 1em;
+    font-size: 0.8em;
+    color: gray;
+}
+
+@media only screen and (min-width: 1100px) {
+    #revues #cadre article {
+        max-width: 40%;
+    }
+}
+
+/* Section Nouvelles */
+
+#nouvelles {
+    margin: 5em 0;
+    position: relative;
+}
+
+#nouvelles div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#nouvelles div article {
+    width: 20em;
+    height: 19.6em;
+    margin: 1em;
+    margin-top: 2em;
+}
+
+#nouvelles div article img {
+    width: 20em;
+    height: auto;
+    max-width: 100%;
+}
+
+#nouvelles span {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#nouvelles #a {
+    font-size: 1.5em;
+    display: inline;
+    margin: 0;
+}
+
+#nouvelles #b {
+    font-size: 0.8em;
+    color: gray;
+    display: inline;
+    margin-top: 0.9em;
+}
+
+#nouvelles #c {
+    font-size: 0.8em;
+    color: gray;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+
+#nouvelles #d {
+    font-size: 1.3em;
+    position: absolute;
+    top: 2em;
+    left: 0.6em;
+}
+
+#nouvelles #e {
+    font-size: 0.8em;
+    color: gray;
+    position: absolute;
+    top: 10em;
+    left: 1em;
+    max-width: 90%;
+}
+
+#nouvelles #f {
+    color: green;
+    position: absolute;
+    top: 15em;
+    left: 1em;
+}
+
+#nouvelles #text_art {
+    border: 0.2em green solid;
+    position: relative;
+}
+
+@media only screen and (max-width: 400px) {
+    #nouvelles span {
+        justify-content: start;
+    }
+    #nouvelles #b {
+        margin-right: 5em;
+    }
+}
