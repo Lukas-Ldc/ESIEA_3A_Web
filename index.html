@@ -15,7 +15,7 @@
     <span>
 
       <img alt="Logo du site web" src="img/logo/logo.png" id="img_logo">
-      <p id="call_pc">APPELEZ NOUS: (+33)6 78 90 12 34</p>
+      <p id="call_pc">APPELEZ NOUS: <strong>(+33)6 78 90 12 34</strong></p>
 
       <span class="social" id="social_pc">
         <a target="_blank" href="https://twitter.com/"><img alt="Twitter" src="img/logo/twitter.png"></a>
@@ -33,8 +33,7 @@
         </a>
       </nav>
     </span>
-
-    <p id="call_mobile">APPELEZ NOUS: (+33)6 78 90 12 34</p>
+    <p id="call_mobile">APPELEZ NOUS: <strong>(+33)6 78 90 12 34</strong></p>
     <span class="social" id="social_mobile">
       <a target="_blank" href="https://twitter.com/"><img alt="Twitter" src="img/logo/twitter.png"></a>
       <a target="_blank" href="https://www.facebook.com/"><img alt="Facebook" src="img/logo/facebook.png"></a>
@@ -46,8 +45,24 @@
 
   </header>
 
-  <img alt="Image principale" src="img/main.png" id="main_img">
   <img alt="Image principale" src="img/main_mob.png" id="main_img_mob">
+
+  <div id="slider">
+    <div class="slide" id="first">
+      <img src="img/main.png">
+    </div>
+
+    <div class="slide">
+      <img src="img/main1.png">
+    </div>
+
+    <div class="slide">
+      <img src="img/main2.png">
+    </div>
+
+    <a id="prev" class="butt" onclick="changeSlide(-1)">&#10094;</a>
+    <a id="next" class="butt" onclick="changeSlide(1)">&#10095;</a>
+  </div>
 
   <section id="leadeurs">
     <span>
@@ -62,6 +77,7 @@
 
     <img alt="Allée et maison" src="img/allay.png" id="allay">
     <img alt="Allée et maison" src="img/allay_mob.png" id="allay_mob">
+
   </section>
 
   <section id="projets">
@@ -79,22 +95,25 @@
       <article>
         <img alt="Image article de section" src="img/allay_mob.png">
         <p>Titre du projet sur l'image</p>
-        <a>Voir le projet</a>
+        <a>Voir le projet &#10095;</a>
+      </article>
+      <article id="text_art">
+        <img alt="Image article de section" src="img/allay_mob.png">
+        <p id="f">Titre du projet sur l'image</p>
+        <p id="g">Texte du projet sous l'image. Texte du projet sous l'image. Texte du projet sous l'image. Texte du
+          projet sous l'image. Texte du projet sous l'image. Texte du projet sous l'image. Texte du projet sous l'image.
+          Texte du projet sous l'image.</p>
+        <a>Voir le projet &#10095;</a>
       </article>
       <article>
         <img alt="Image article de section" src="img/allay_mob.png">
         <p>Titre du projet sur l'image</p>
-        <a>Voir le projet</a>
+        <a>Voir le projet &#10095;</a>
       </article>
       <article>
         <img alt="Image article de section" src="img/allay_mob.png">
         <p>Titre du projet sur l'image</p>
-        <a>Voir le projet</a>
-      </article>
-      <article>
-        <img alt="Image article de section" src="img/allay_mob.png">
-        <p>Titre du projet sur l'image</p>
-        <a>Voir le projet</a>
+        <a>Voir le projet &#10095;</a>
       </article>
     </span>
 
@@ -108,14 +127,14 @@
         <p class="b"><strong>Nom Prenom</strong> / Poste</p>
         <p class="c">Texte de la revue. Texte de la revue. Texte de la revue. Texte de la revue. Texte de la revue.
           Texte de la revue. Texte de la revue. Texte de la revue. Texte de la revue. Texte de la revue. Texte de la
-          revue. Texte de la revue.</p>
+          revue. Texte de la revue. Texte de la revue.</p>
       </article>
       <article>
         <img alt="Photo personne" src="img/logo/facebook.png">
         <p class="b"><strong>Nom Prenom</strong> / Poste</p>
         <p class="c">Texte de la revue. Texte de la revue. Texte de la revue. Texte de la revue. Texte de la revue.
           Texte de la revue. Texte de la revue. Texte de la revue. Texte de la revue. Texte de la revue. Texte de la
-          revue. Texte de la revue.</p>
+          revue. Texte de la revue. Texte de la revue. Texte de la revue. Texte de la revue. Texte de la revue.</p>
       </article>
     </section>
   </section>
@@ -129,7 +148,8 @@
       <article id="text_art">
         <p id="c">11/05/2021</p>
         <p id="d">Découvrez l'architecture de l'hotel Bario</p>
-        <p id="e">Texte de la nouvelle. Texte de la nouvelle. Texte de la nouvelle. Texte de la nouvelle.</p>
+        <p id="e">Texte de la nouvelle. Texte de la nouvelle. Texte de la nouvelle. Texte de la nouvelle. Texte de la
+          nouvelle. Texte de la nouvelle.</p>
         <p id="f">Continuer</p>
       </article>
       <article>
